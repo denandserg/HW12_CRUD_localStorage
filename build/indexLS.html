@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CRUD with LS</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body id="crudLS">
+<h2>CRUD work with Local Storage</h2>
+<form id="formLS">
+    <fieldset>
+        <legend>Data form:</legend>
+        <div class="input-wrapper-ls">
+            <input type="number" class="input-wrapper-ls__inp-text input-wrapper-ls__inp-text--id" placeholder="ID" required/>
+            <input type="text" class="input-wrapper-ls__inp-text" placeholder="FirstName" />
+            <input type="text" class="input-wrapper-ls__inp-text" placeholder="LastName"/>
+            <input type="text" class="input-wrapper-ls__inp-text" placeholder="Age"/>
+        </div>
+        <div class="input-wrapper-ls-btn">
+            <input type="button" class="input-wrapper-ls__btn" value="Read" />
+            <input type="button" class="input-wrapper-ls__btn" value="Add Start" />
+            <input type="button" class="input-wrapper-ls__btn" value="Add Middle" />
+            <input type="button" class="input-wrapper-ls__btn" value="Add End" />
+            <input type="button" class="input-wrapper-ls__btn" value="Save" />
+            <input type="button" class="input-wrapper-ls__btn" value="Delete" />
+            <input type="button" class="input-wrapper-ls__btn" value="Clear" />
+        </div>
+    </fieldset>
+</form>
+<table id="tablePersonLS"></table>
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body id="crud">
+  <h2>CRUD</h2>
+    <form id="form">
+      <fieldset>
+        <legend>Data form:</legend>
+        <div class="input-wrapper">
+          <input type="number" class="input-wrapper__inp-text input-wrapper__inp-text--id" placeholder="ID" required/>
+          <input type="text" class="input-wrapper__inp-text" placeholder="FirstName" />
+          <input type="text" class="input-wrapper__inp-text" placeholder="LastName"/>
+          <input type="text" class="input-wrapper__inp-text" placeholder="Age"/>
+        </div>
+        <div class="input-wrapper-btn">
+          <input type="button" class="input-wrapper__btn" value="Create" />
+          <input type="button" class="input-wrapper__btn" value="Update" />
+          <input type="button" class="input-wrapper__btn" value="Delete" />
+        </div>
+      </fieldset>
+    </form>
+    <table id="tablePerson"></table>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

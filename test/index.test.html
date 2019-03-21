@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+</head>
+
+
+<body id="crud">
+
+<form id="form" style="display: none;">
+    <fieldset>
+        <legend>Data form:</legend>
+        <div class="input-wrapper">
+            <input type="number" class="input-wrapper__inp-text input-wrapper__inp-text--id" placeholder="ID" required/>
+            <input type="text" class="input-wrapper__inp-text" placeholder="FirstName" />
+            <input type="text" class="input-wrapper__inp-text" placeholder="LastName"/>
+            <input type="text" class="input-wrapper__inp-text" placeholder="Age"/>
+        </div>
+        <div class="input-wrapper-btn">
+            <input type="button" class="input-wrapper__btn" value="Create" />
+            <input type="button" class="input-wrapper__btn" value="Update" />
+            <input type="button" class="input-wrapper__btn" value="Delete" />
+        </div>
+    </fieldset>
+</form>
+<table id="tablePerson" style="display: none;" ></table>
+
+<div id="mocha"></div>
+
+<form id="formLS" style="display: none;">
+    <fieldset>
+        <legend>Data form:</legend>
+        <div class="input-wrapper-ls">
+            <input type="number" class="input-wrapper-ls__inp-text input-wrapper-ls__inp-text--id" placeholder="ID" required/>
+            <input type="text" class="input-wrapper-ls__inp-text" placeholder="FirstName" />
+            <input type="text" class="input-wrapper-ls__inp-text" placeholder="LastName"/>
+            <input type="text" class="input-wrapper-ls__inp-text" placeholder="Age"/>
+        </div>
+        <div class="input-wrapper-ls-btn">
+            <input type="button" class="input-wrapper-ls__btn" value="Read" />
+            <input type="button" class="input-wrapper-ls__btn" value="Add Start" />
+            <input type="button" class="input-wrapper-ls__btn" value="Add Middle" />
+            <input type="button" class="input-wrapper-ls__btn" value="Add End" />
+            <input type="button" class="input-wrapper-ls__btn" value="Save" />
+            <input type="button" class="input-wrapper-ls__btn" value="Delete" />
+            <input type="button" class="input-wrapper-ls__btn" value="Clear" />
+        </div>
+    </fieldset>
+</form>
+<table id="tablePersonLS" style="display: none;"></table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+<script>
+  mocha.setup('bdd');
+  var assert = chai.assert;
+</script>
+<script src="../src/js/index.js"></script>
+<script src="../src/js/indexLS.js"></script>
+<script src="../node_modules/sinon/pkg/sinon.js"></script>
+<script src="./index.test.js"></script>
+<script>
+  mocha.run();
+</script>
+</body>
+
+</html>
